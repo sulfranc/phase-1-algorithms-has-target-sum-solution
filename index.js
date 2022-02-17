@@ -1,7 +1,22 @@
+sayHello;
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+  // Write your algorithm here\
+  for(i = 0; i < array.length - 1; i++){
+    for (j = i + 1; j < array.length; j++){
+      if (target == array[j] + array[i]){
+        return true
 
+        
+      }
+      
+      
+    }
+  }
+  return false
+}
+function sayHello (){
+  console.log("hello")
+}
 /* 
   Write the Big O time complexity of your function here
 */
